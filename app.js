@@ -12,16 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const clearCompletedElement = document.querySelector('.clear-completed')
   let theme = localStorage.getItem("theme");
   let itemsLeftCount = 0;
-  let todos = [
-    {
-      content: "Todo 1",
-      completed: false
-    },
-    {
-      content: "Todo 2",
-      completed: false
-    },
-  ];
+  let todos = [];
   
   function disableDarkMode() {
     localStorage.setItem("theme", "light");
